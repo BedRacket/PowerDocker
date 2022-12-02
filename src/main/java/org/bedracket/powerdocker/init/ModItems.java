@@ -16,8 +16,11 @@ public class ModItems {
                     PowerdockerMod.MOD_ID);
 
     // Weapons
-    public static final RegistryObject<Item> BLAZE_BOW =
-            register("blaze_bow", BlazeBowItem::new);
+    public static final RegistryObject<Item> vein_sword =
+            register("vein_sword", BlazeBowItem::new);
+
+    public static final RegistryObject<Item> avail =
+            register("avail",BlazeBowItem::new);
 
     private static <T extends Item> RegistryObject<T> register(String name, Supplier<T> item) {
         return ITEMS.register(name, item);

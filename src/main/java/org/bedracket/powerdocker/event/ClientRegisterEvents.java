@@ -13,7 +13,8 @@ public class ClientRegisterEvents {
     @SubscribeEvent
     public static void registerItemModels(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
-            BowUtils.bowItemOverrides(ModItems.BLAZE_BOW.get());
+            //BowUtils.bowItemOverrides(ModItems.BLAZE_BOW.get());
+            BowUtils.bowItemOverrides(ModItems.vein_sword.get());
         });
     }
 }
