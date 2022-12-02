@@ -12,6 +12,7 @@ public class PowerdockerMod {
 
     public static final String MOD_ID = "powerdocker";
     private static final Logger LOGGER = LogUtils.getLogger();
+    public static final String NETWORK_VERSION = "1.0";
 
     public PowerdockerMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
