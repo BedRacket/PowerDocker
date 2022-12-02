@@ -3,6 +3,8 @@ package org.bedracket.powerdocker.item;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -10,6 +12,7 @@ import net.minecraft.world.item.*;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
+import org.bedracket.powerdocker.api.mana.IManaHandler;
 
 public class BlazeBowItem extends BowItem {
 
@@ -20,8 +23,28 @@ public class BlazeBowItem extends BowItem {
     }
 
     @Override
+    public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pHand) {
+        if (((IManaHandler) pPlayer).getMana() > 0) {
+            ItemStack itemstack = pPlayer.getItemInHand(pHand);
+            boolean flag = !pPlayer.getProjectile(itemstack).isEmpty();
+
+            InteractionResultHolder<ItemStack> ret = net.minecraftforge.event.ForgeEventFactory.onArrowNock(itemstack, pLevel, pPlayer, pHand, flag);
+            if (ret != null) return ret;
+
+            if (!pPlayer.getAbilities().instabuild && !flag) {
+                return InteractionResultHolder.fail(itemstack);
+            } else {
+                pPlayer.startUsingItem(pHand);
+                return InteractionResultHolder.consume(itemstack);
+            }
+        } else {
+            return InteractionResultHolder.pass(pPlayer.getItemInHand(pHand));
+        }
+    }
+
+    @Override
     public void releaseUsing(ItemStack pStack, Level pLevel, LivingEntity pEntityLiving, int pTimeLeft) {
-        if (pEntityLiving instanceof Player player) {
+        if (pEntityLiving instanceof Player player && ((IManaHandler) player).getMana() > 0) {
             boolean flag = player.getAbilities().instabuild || EnchantmentHelper.getItemEnchantmentLevel(Enchantments.INFINITY_ARROWS, pStack) > 0;
             ItemStack itemstack = player.getProjectile(pStack);
 
@@ -67,7 +90,7 @@ public class BlazeBowItem extends BowItem {
                         pLevel.addFreshEntity(abstractarrow);
                     }
 
-                    pLevel.playSound((Player)null, player.getX(), player.getY(), player.getZ(), SoundEvents.ARROW_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F / (pLevel.getRandom().nextFloat() * 0.4F + 1.2F) + f * 0.5F);
+                    pLevel.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ARROW_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F / (pLevel.getRandom().nextFloat() * 0.4F + 1.2F) + f * 0.5F);
                     if (!flag1 && !player.getAbilities().instabuild) {
                         itemstack.shrink(1);
                         if (itemstack.isEmpty()) {
@@ -76,6 +99,9 @@ public class BlazeBowItem extends BowItem {
                     }
 
                     player.awardStat(Stats.ITEM_USED.get(this));
+                    if (!player.isCreative()) {
+                        ((IManaHandler) player).reduceMana(1.0F);
+                    }
                 }
             }
         }

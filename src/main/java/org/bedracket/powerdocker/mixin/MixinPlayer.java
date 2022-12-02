@@ -25,7 +25,7 @@ public abstract class MixinPlayer extends LivingEntity implements IManaHandler {
     private static final EntityDataAccessor<Float> MAX_MANA =
             SynchedEntityData.defineId(Player.class, EntityDataSerializers.FLOAT);
     private static final int REGEN_SPEED = 20;
-    private static final float REGEN_AMOUNT = 1.0f;
+    private static final float REGEN_AMOUNT = 0.1f;
 
     protected MixinPlayer(EntityType<? extends LivingEntity> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
