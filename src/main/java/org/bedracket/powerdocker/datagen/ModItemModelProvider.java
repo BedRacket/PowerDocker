@@ -106,6 +106,5 @@ public class ModItemModelProvider extends ItemModelProvider {
      * skipItems(ModItems.EXAMPLE_ITEM.get());
      */
     protected void addSkipItems()  {
-        skipItems(ModItems.vein_sword.get());
     }
 }

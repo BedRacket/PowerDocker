@@ -23,18 +23,3 @@ Powed Docker Mod in Minecraft
    versionRange="[1.19.2,1.20)"
    ordering="NONE"
    side="BOTH"
-#项目	         描述	                                                 是否必填
-#modid	         这个mods.toml文件对应的Mod的modid	                            是
-#version	     定义Mod的版本，应与build.gradle中定义的值相同，参考上一章内容     	是
-#displayName	 Mod在游戏中显示的名称	                                        是
-#loaderVersion	 指定Mod可以兼容的Forge版本的主版本号	                        是
-#license	     Mod发布使用的授权协议	                                        否
-#issueTrackerURL 用于跟踪Mod问题的URL                                      	否
-#updateJSONURL   用于检查更新的Json的URL	                                    否
-#displayURL	     Mod主页的URL	                                            否
-#logoFile        Mod的Logo文件的路径	                                        否
-#credits	     Mod的感谢名单                                             	否
-#authors	     Mod的作者	                                                否
-#description     Mod的描述	                                                是
-#dependencies    Mod的前置Mod的列表	                                        否
-#displayTest	 Mod在连接服务器界面显示的文本                               	否
