@@ -1,6 +1,7 @@
 package org.bedracket.powerdocker.util;
 
 import net.minecraft.ChatFormatting;
+import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Player;
 import org.bedracket.powerdocker.api.mana.IManaHandler;
@@ -17,5 +18,11 @@ public class ManaUtils {
 
     public static void isManaWeapon(List<Component> tooltip) {
         tooltip.add(Component.translatable("tooltip.powerdocker.mana.weapons").withStyle(ChatFormatting.DARK_PURPLE));
+    }
+
+    public static boolean checkManaExist() {
+        Player player = Minecraft.getInstance().player;
+        assert player != null;
+        return ((IManaHandler) player).getMana() > 0;
     }
 }

@@ -14,6 +14,7 @@ import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 import org.bedracket.powerdocker.api.mana.IManaHandler;
+import org.bedracket.powerdocker.init.ModCreativeModeTabs;
 import org.bedracket.powerdocker.util.ManaUtils;
 import org.jetbrains.annotations.Nullable;
 
@@ -24,12 +25,12 @@ public class BlazeBowItem extends BowItem {
     public BlazeBowItem() {
         super(new Item.Properties()
                 .durability(384)
-                .tab(CreativeModeTab.TAB_COMBAT));
+                .tab(ModCreativeModeTabs.COMMON));
     }
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pHand) {
-        if (((IManaHandler) pPlayer).getMana() > 0) {
+        if (ManaUtils.checkManaExist()) {
             ItemStack itemstack = pPlayer.getItemInHand(pHand);
             boolean flag = !pPlayer.getProjectile(itemstack).isEmpty();
 
@@ -54,7 +55,7 @@ public class BlazeBowItem extends BowItem {
 
     @Override
     public void releaseUsing(ItemStack pStack, Level pLevel, LivingEntity pEntityLiving, int pTimeLeft) {
-        if (pEntityLiving instanceof Player player && ((IManaHandler) player).getMana() > 0) {
+        if (pEntityLiving instanceof Player player && ManaUtils.checkManaExist()) {
             boolean flag = player.getAbilities().instabuild || EnchantmentHelper.getItemEnchantmentLevel(Enchantments.INFINITY_ARROWS, pStack) > 0;
             ItemStack itemstack = player.getProjectile(pStack);
 
@@ -109,7 +110,7 @@ public class BlazeBowItem extends BowItem {
                     }
 
                     player.awardStat(Stats.ITEM_USED.get(this));
-                    ManaUtils.reducePlayerMana(player, 1.0F);
+                    ManaUtils.reducePlayerMana(player, 0.5F);
                 }
             }
         }
