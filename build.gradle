@@ -129,6 +129,9 @@ dependencies {
 }
 
 jar {
+    from("LICENSE")
+    exclude(".cache/**")
+    exclude("org/bedracket/powerdocker/datagen/**")
     manifest {
         attributes([
                 "Specification-Title"     : "powerdocker",

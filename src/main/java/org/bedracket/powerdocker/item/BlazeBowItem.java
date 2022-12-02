@@ -1,5 +1,6 @@
 package org.bedracket.powerdocker.item;
 
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
@@ -13,6 +14,10 @@ import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 import org.bedracket.powerdocker.api.mana.IManaHandler;
+import org.bedracket.powerdocker.util.ManaUtils;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class BlazeBowItem extends BowItem {
 
@@ -40,6 +45,11 @@ public class BlazeBowItem extends BowItem {
         } else {
             return InteractionResultHolder.pass(pPlayer.getItemInHand(pHand));
         }
+    }
+
+    @Override
+    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+        ManaUtils.isManaWeapon(pTooltipComponents);
     }
 
     @Override
@@ -99,9 +109,7 @@ public class BlazeBowItem extends BowItem {
                     }
 
                     player.awardStat(Stats.ITEM_USED.get(this));
-                    if (!player.isCreative()) {
-                        ((IManaHandler) player).reduceMana(1.0F);
-                    }
+                    ManaUtils.reducePlayerMana(player, 1.0F);
                 }
             }
         }

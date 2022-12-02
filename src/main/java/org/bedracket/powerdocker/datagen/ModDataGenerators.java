@@ -16,6 +16,11 @@ public class ModDataGenerators {
     public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
         ExistingFileHelper helper = event.getExistingFileHelper();
-        generator.addProvider(event.includeClient(), new ModItemModelProvider(generator, helper, ModItems.ITEMS));
+        generator.addProvider(event.includeClient(),
+                new ModItemModelProvider(generator, helper, ModItems.ITEMS));
+        generator.addProvider(event.includeClient(),
+                new ModLanguageProvider(generator));
+        generator.addProvider(event.includeClient(),
+                new ModLanguageProviderZh(generator));
     }
 }

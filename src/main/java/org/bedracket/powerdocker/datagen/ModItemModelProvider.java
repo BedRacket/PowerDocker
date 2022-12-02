@@ -3,7 +3,6 @@ package org.bedracket.powerdocker.datagen;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.TieredItem;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
@@ -105,6 +104,11 @@ public class ModItemModelProvider extends ItemModelProvider {
      * Example Usage:
      * skipItems(ModItems.EXAMPLE_ITEM.get());
      */
-    protected void addSkipItems()  {
+    protected void addSkipItems() {
+        skipItems(
+                ModItems.BLAZE_BOW.get(),
+                ModItems.VEIN_SWORD.get(),
+                ModItems.AVAIL.get()
+        );
     }
 }
