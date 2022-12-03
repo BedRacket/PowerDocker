@@ -27,7 +27,7 @@ public class ManaRestoreMessage implements INormalMessage {
             SimpleNetworkHandler.CHANNEL.
                     send(PacketDistributor.PLAYER.with(() -> player),
                             new PlayerManaMessage(((IManaHandler) player).getMana(),
-                                    ((IManaHandler) player).getMana()));
+                                    ((IManaHandler) player).getMaxMana()));
         }
     }
 }
