@@ -3,12 +3,9 @@
   "minVersion": "0.8",
   "package": "org.bedracket.powerdocker.mixin",
   "compatibilityLevel": "JAVA_17",
-  "refmap": "powerdocker.refmap.json",
   "mixins": [
-    "MixinPlayer"
   ],
   "client": [
-    "MixinGui"
   ],
   "injectors": {
     "defaultRequire": 1

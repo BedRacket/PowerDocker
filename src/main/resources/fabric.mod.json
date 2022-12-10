@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "powerdocker",
+  "version": "${version}",
+  "name": "Powerdocker",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/powerdocker/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.bedracket.powerdocker.PowerdockerMod"
+    ]
+  },
+  "mixins": [
+    "powerdocker.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}
