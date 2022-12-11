@@ -26,6 +26,7 @@ public class ModItemGroups {
                 entries.add(ModItems.COOKED_TROUT.get());
                 entries.add(ModItems.TROUT_BUCKET.get());
                 entries.add(ModItems.TROUT_SPAWN_EGG.get());
+                entries.add(ModBlocks.ROSE.get());
             })
             .build();
 }
