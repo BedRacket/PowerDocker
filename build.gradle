@@ -21,7 +21,8 @@ dependencies {
 
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-    modImplementation(include("com.github.BedRacket:EventPlus:0.0.1a"))
+    modImplementation fileTree("lib/bedracket_entity_events-1.0-SNAPSHOT.jar")
+    modImplementation fileTree("lib/bedracket_eventbus-1.0-SNAPSHOT.jar")
 }
 
 processResources {
