@@ -10,9 +10,8 @@ import java.util.function.Supplier;
 @SuppressWarnings("deprecation")
 public enum ModToolMaterials implements ToolMaterial {
 
-    COPPER(2, 131, 4.0F, 2.0F, 12, () -> {
-        return Ingredient.ofItems(Items.COPPER_INGOT);
-    });
+    COPPER(2, 131, 4.0F, 2.0F, 12,
+            () -> Ingredient.ofItems(Items.COPPER_INGOT));
 
     private final int miningLevel;
     private final int itemDurability;

@@ -1,7 +1,12 @@
 {
   "item.powerdocker.bed_racket": "BedRacket",
   "item.powerdocker.copper_axe": "Copper Axe",
+  "item.powerdocker.copper_boots": "Copper Boots",
+  "item.powerdocker.copper_chestplate": "Copper Chestplate",
+  "item.powerdocker.copper_helmet": "Copper Helmet",
   "item.powerdocker.copper_hoe": "Copper Hoe",
+  "item.powerdocker.copper_leggings": "Copper Leggings",
+  "item.powerdocker.copper_nugget": "Copper Nugget",
   "item.powerdocker.copper_pickaxe": "Copper Pickaxe",
   "item.powerdocker.copper_shovel": "Copper Shovel",
   "item.powerdocker.copper_sword": "Copper Sword",

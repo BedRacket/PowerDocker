@@ -18,6 +18,14 @@ public class ModItemGroups {
                 entries.add(ModItems.COPPER_HOE.get());
                 entries.add(ModItems.COPPER_PICKAXE.get());
                 entries.add(ModItems.COPPER_SHOVEL.get());
+                entries.add(ModItems.COPPER_HELMET.get());
+                entries.add(ModItems.COPPER_CHESTPLATE.get());
+                entries.add(ModItems.COPPER_LEGGINGS.get());
+                entries.add(ModItems.COPPER_BOOTS.get());
+                entries.add(ModItems.TROUT.get());
+                entries.add(ModItems.COOKED_TROUT.get());
+                entries.add(ModItems.TROUT_BUCKET.get());
+                entries.add(ModItems.TROUT_SPAWN_EGG.get());
             })
             .build();
 }

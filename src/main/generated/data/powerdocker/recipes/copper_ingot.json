@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "powerdocker:copper_nugget"
+    },
+    {
+      "item": "powerdocker:copper_nugget"
+    },
+    {
+      "item": "powerdocker:copper_nugget"
+    },
+    {
+      "item": "powerdocker:copper_nugget"
+    },
+    {
+      "item": "powerdocker:copper_nugget"
+    },
+    {
+      "item": "powerdocker:copper_nugget"
+    },
+    {
+      "item": "powerdocker:copper_nugget"
+    },
+    {
+      "item": "powerdocker:copper_nugget"
+    },
+    {
+      "item": "powerdocker:copper_nugget"
+    }
+  ],
+  "result": {
+    "item": "minecraft:copper_ingot"
+  }
+}

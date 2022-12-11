@@ -1,7 +1,12 @@
 {
   "item.powerdocker.bed_racket": "BedRacket",
   "item.powerdocker.copper_axe": "铜斧",
+  "item.powerdocker.copper_boots": "铜制战靴",
+  "item.powerdocker.copper_chestplate": "铜制胸甲",
+  "item.powerdocker.copper_helmet": "铜制头盔",
   "item.powerdocker.copper_hoe": "铜锄",
+  "item.powerdocker.copper_leggings": "铜制护腿",
+  "item.powerdocker.copper_nugget": "铜粒",
   "item.powerdocker.copper_pickaxe": "铜镐",
   "item.powerdocker.copper_shovel": "铜锹",
   "item.powerdocker.copper_sword": "铜剑",

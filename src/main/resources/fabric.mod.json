@@ -13,6 +13,9 @@
     "main": [
       "org.bedracket.powerdocker.PowerDockerMod"
     ],
+    "client": [
+      "org.bedracket.powerdocker.PowerDockerClientMod"
+    ],
     "fabric-datagen": [
       "org.bedracket.powerdocker.datagen.ModDataGenerators"
     ]

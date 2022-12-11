@@ -5,7 +5,7 @@ import java.util.function.Supplier;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-public class RegistryObject<T> {
+public class RegistryObject<T> implements Supplier<T> {
     private final Identifier id;
     private final T entry;
 

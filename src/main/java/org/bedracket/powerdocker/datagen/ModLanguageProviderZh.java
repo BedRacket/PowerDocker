@@ -18,6 +18,11 @@ public class ModLanguageProviderZh extends FabricLanguageProvider {
         translationBuilder.add(ModItems.COPPER_HOE.get(), "铜锄");
         translationBuilder.add(ModItems.COPPER_PICKAXE.get(), "铜镐");
         translationBuilder.add(ModItems.COPPER_SHOVEL.get(), "铜锹");
+        translationBuilder.add(ModItems.COPPER_NUGGET.get(), "铜粒");
+        translationBuilder.add(ModItems.COPPER_HELMET.get(), "铜制头盔");
+        translationBuilder.add(ModItems.COPPER_CHESTPLATE.get(), "铜制胸甲");
+        translationBuilder.add(ModItems.COPPER_LEGGINGS.get(), "铜制护腿");
+        translationBuilder.add(ModItems.COPPER_BOOTS.get(), "铜制战靴");
         translationBuilder.add("itemGroup.powerdocker.general", "PowerDocker|通常");
     }
 }
