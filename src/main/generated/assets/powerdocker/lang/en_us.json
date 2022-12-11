@@ -1,0 +1,9 @@
+{
+  "item.powerdocker.bed_racket": "BedRacket",
+  "item.powerdocker.copper_axe": "Copper Axe",
+  "item.powerdocker.copper_hoe": "Copper Hoe",
+  "item.powerdocker.copper_pickaxe": "Copper Pickaxe",
+  "item.powerdocker.copper_shovel": "Copper Shovel",
+  "item.powerdocker.copper_sword": "Copper Sword",
+  "itemGroup.powerdocker.general": "PowerDocker|General"
+}

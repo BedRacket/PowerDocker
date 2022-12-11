@@ -11,9 +11,13 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "org.bedracket.powerdocker.PowerdockerMod"
+      "org.bedracket.powerdocker.PowerDockerMod"
+    ],
+    "fabric-datagen": [
+      "org.bedracket.powerdocker.datagen.ModDataGenerators"
     ]
   },
+  "accessWidener" : "powerdocker.accesswidener",
   "mixins": [
     "powerdocker.mixins.json"
   ],

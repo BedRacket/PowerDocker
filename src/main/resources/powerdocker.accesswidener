@@ -1,0 +1,3 @@
+accessWidener	v1	named
+# PowerDocker Mod Access Widener
+accessible method   net/minecraft/item/HoeItem <init> (Lnet/minecraft/item/ToolMaterial;IFLnet/minecraft/item/Item$Settings;)V
