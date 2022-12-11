@@ -23,14 +23,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
-        offerTools(ModItems.COPPER_AXE.get(), ModItems.COPPER_PICKAXE.get(),
-                ModItems.COPPER_HOE.get(), ModItems.COPPER_SHOVEL.get(),
-                ModItems.COPPER_SWORD.get(), Items.COPPER_INGOT, exporter);
-        offerNugget(Items.COPPER_INGOT, ModItems.COPPER_NUGGET.get(), exporter);
-        offerArmors(ModItems.COPPER_HELMET.get(), ModItems.COPPER_CHESTPLATE.get(),
-                ModItems.COPPER_LEGGINGS.get(), ModItems.COPPER_BOOTS.get(),
+        offerTools(ModItems.COPPER_AXE, ModItems.COPPER_PICKAXE,
+                ModItems.COPPER_HOE, ModItems.COPPER_SHOVEL,
+                ModItems.COPPER_SWORD, Items.COPPER_INGOT, exporter);
+        offerNugget(Items.COPPER_INGOT, ModItems.COPPER_NUGGET, exporter);
+        offerArmors(ModItems.COPPER_HELMET, ModItems.COPPER_CHESTPLATE,
+                ModItems.COPPER_LEGGINGS, ModItems.COPPER_BOOTS,
                 Items.COPPER_INGOT, exporter);
-        offerSimpleCooking(exporter, ModItems.TROUT.get(), ModItems.COOKED_TROUT.get());
+        offerSimpleCooking(exporter, ModItems.TROUT, ModItems.COOKED_TROUT);
     }
 
     private static void offerSimpleCooking(Consumer<RecipeJsonProvider> exporter, Item input, Item output) {

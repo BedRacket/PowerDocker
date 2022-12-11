@@ -20,18 +20,18 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.BED_RACKET.get(), Models.GENERATED);
-        itemModelGenerator.register(ModItems.COPPER_NUGGET.get(), Models.GENERATED);
-        itemModelGenerator.register(ModItems.COPPER_HELMET.get(), Models.GENERATED);
-        itemModelGenerator.register(ModItems.TROUT.get(), Models.GENERATED);
-        itemModelGenerator.register(ModItems.COOKED_TROUT.get(), Models.GENERATED);
-        itemModelGenerator.register(ModItems.COPPER_CHESTPLATE.get(), Models.GENERATED);
-        itemModelGenerator.register(ModItems.COPPER_LEGGINGS.get(), Models.GENERATED);
-        itemModelGenerator.register(ModItems.COPPER_BOOTS.get(), Models.GENERATED);
-        itemModelGenerator.register(ModItems.COPPER_SWORD.get(), Models.HANDHELD);
-        itemModelGenerator.register(ModItems.COPPER_AXE.get(), Models.HANDHELD);
-        itemModelGenerator.register(ModItems.COPPER_HOE.get(), Models.HANDHELD);
-        itemModelGenerator.register(ModItems.COPPER_PICKAXE.get(), Models.HANDHELD);
-        itemModelGenerator.register(ModItems.COPPER_SHOVEL.get(), Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BED_RACKET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COPPER_NUGGET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COPPER_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TROUT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COOKED_TROUT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COPPER_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COPPER_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COPPER_BOOTS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COPPER_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.COPPER_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.COPPER_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.COPPER_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.COPPER_SHOVEL, Models.HANDHELD);
     }
 }

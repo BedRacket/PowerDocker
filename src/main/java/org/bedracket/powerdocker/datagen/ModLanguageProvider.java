@@ -12,21 +12,21 @@ public class ModLanguageProvider extends FabricLanguageProvider {
 
     @Override
     public void generateTranslations(TranslationBuilder translationBuilder) {
-        translationBuilder.add(ModItems.BED_RACKET.get(), "BedRacket");
-        translationBuilder.add(ModItems.COPPER_SWORD.get(), "Copper Sword");
-        translationBuilder.add(ModItems.COPPER_AXE.get(), "Copper Axe");
-        translationBuilder.add(ModItems.COPPER_HOE.get(), "Copper Hoe");
-        translationBuilder.add(ModItems.COPPER_PICKAXE.get(), "Copper Pickaxe");
-        translationBuilder.add(ModItems.COPPER_SHOVEL.get(), "Copper Shovel");
-        translationBuilder.add(ModItems.COPPER_NUGGET.get(), "Copper Nugget");
-        translationBuilder.add(ModItems.COPPER_HELMET.get(), "Copper Helmet");
-        translationBuilder.add(ModItems.COPPER_CHESTPLATE.get(), "Copper Chestplate");
-        translationBuilder.add(ModItems.COPPER_LEGGINGS.get(), "Copper Leggings");
-        translationBuilder.add(ModItems.COPPER_BOOTS.get(), "Copper Boots");
-        translationBuilder.add(ModItems.TROUT.get(), "Trout");
-        translationBuilder.add(ModItems.COOKED_TROUT.get(), "Cooked Trout");
-        translationBuilder.add(ModItems.TROUT_SPAWN_EGG.get(), "Trout Spawn Egg");
-        translationBuilder.add(ModItems.TROUT_BUCKET.get(), "Trout Bucket");
+        translationBuilder.add(ModItems.BED_RACKET, "BedRacket");
+        translationBuilder.add(ModItems.COPPER_SWORD, "Copper Sword");
+        translationBuilder.add(ModItems.COPPER_AXE, "Copper Axe");
+        translationBuilder.add(ModItems.COPPER_HOE, "Copper Hoe");
+        translationBuilder.add(ModItems.COPPER_PICKAXE, "Copper Pickaxe");
+        translationBuilder.add(ModItems.COPPER_SHOVEL, "Copper Shovel");
+        translationBuilder.add(ModItems.COPPER_NUGGET, "Copper Nugget");
+        translationBuilder.add(ModItems.COPPER_HELMET, "Copper Helmet");
+        translationBuilder.add(ModItems.COPPER_CHESTPLATE, "Copper Chestplate");
+        translationBuilder.add(ModItems.COPPER_LEGGINGS, "Copper Leggings");
+        translationBuilder.add(ModItems.COPPER_BOOTS, "Copper Boots");
+        translationBuilder.add(ModItems.TROUT, "Trout");
+        translationBuilder.add(ModItems.COOKED_TROUT, "Cooked Trout");
+        translationBuilder.add(ModItems.TROUT_SPAWN_EGG, "Trout Spawn Egg");
+        translationBuilder.add(ModItems.TROUT_BUCKET, "Trout Bucket");
         translationBuilder.add("itemGroup.powerdocker.general", "PowerDocker|General");
     }
 }

@@ -24,7 +24,7 @@ public class TroutEntity extends SchoolingFishEntity {
 
     @Override
     public ItemStack getBucketItem() {
-        return new ItemStack(ModItems.TROUT_BUCKET.get());
+        return new ItemStack(ModItems.TROUT_BUCKET);
     }
 
     @Override
