@@ -1,9 +1,9 @@
 package org.bedracket.powerdocker.util;
 
-import java.util.function.Supplier;
-
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+
+import java.util.function.Supplier;
 
 public class RegistryObject<T> implements Supplier<T> {
     private final Identifier id;

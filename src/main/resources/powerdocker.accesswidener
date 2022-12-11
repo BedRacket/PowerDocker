@@ -1,3 +1,9 @@
 accessWidener	v1	named
 # PowerDocker Mod Access Widener
 accessible method   net/minecraft/item/HoeItem <init> (Lnet/minecraft/item/ToolMaterial;IFLnet/minecraft/item/Item$Settings;)V
+accessible field    net/minecraft/item/FoodComponent alwaysEdible Z
+mutable field    net/minecraft/item/FoodComponent alwaysEdible Z
+accessible field    net/minecraft/item/FoodComponent hunger I
+mutable field    net/minecraft/item/FoodComponent hunger I
+accessible field    net/minecraft/item/FoodComponent saturationModifier F
+mutable field    net/minecraft/item/FoodComponent saturationModifier F

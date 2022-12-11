@@ -1,5 +1,7 @@
 {
   "item.powerdocker.bed_racket": "BedRacket",
+  "item.powerdocker.bucket.trout": "Trout Bucket",
+  "item.powerdocker.cooked_trout": "Cooked Trout",
   "item.powerdocker.copper_axe": "Copper Axe",
   "item.powerdocker.copper_boots": "Copper Boots",
   "item.powerdocker.copper_chestplate": "Copper Chestplate",
@@ -10,5 +12,7 @@
   "item.powerdocker.copper_pickaxe": "Copper Pickaxe",
   "item.powerdocker.copper_shovel": "Copper Shovel",
   "item.powerdocker.copper_sword": "Copper Sword",
+  "item.powerdocker.spawn_egg.trout": "Trout Spawn Egg",
+  "item.powerdocker.trout": "Trout",
   "itemGroup.powerdocker.general": "PowerDocker|General"
 }

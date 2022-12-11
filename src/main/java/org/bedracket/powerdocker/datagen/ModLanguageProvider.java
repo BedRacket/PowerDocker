@@ -23,6 +23,10 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.COPPER_CHESTPLATE.get(), "Copper Chestplate");
         translationBuilder.add(ModItems.COPPER_LEGGINGS.get(), "Copper Leggings");
         translationBuilder.add(ModItems.COPPER_BOOTS.get(), "Copper Boots");
+        translationBuilder.add(ModItems.TROUT.get(), "Trout");
+        translationBuilder.add(ModItems.COOKED_TROUT.get(), "Cooked Trout");
+        translationBuilder.add(ModItems.TROUT_SPAWN_EGG.get(), "Trout Spawn Egg");
+        translationBuilder.add(ModItems.TROUT_BUCKET.get(), "Trout Bucket");
         translationBuilder.add("itemGroup.powerdocker.general", "PowerDocker|General");
     }
 }

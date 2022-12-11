@@ -7,10 +7,10 @@ import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.SchoolingFishEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.World;
+import org.bedracket.powerdocker.init.ModItems;
 
 public class TroutEntity extends SchoolingFishEntity {
 
@@ -19,16 +19,12 @@ public class TroutEntity extends SchoolingFishEntity {
     }
 
     public static DefaultAttributeContainer.Builder registerAttributes() {
-        return MobEntity.createMobAttributes().add(EntityAttributes.GENERIC_MAX_HEALTH, 3.0);
-    }
-
-    public int getMaxGroupSize() {
-        return 5;
+        return MobEntity.createMobAttributes().add(EntityAttributes.GENERIC_MAX_HEALTH, 4.0);
     }
 
     @Override
     public ItemStack getBucketItem() {
-        return new ItemStack(Items.SALMON_BUCKET);
+        return new ItemStack(ModItems.TROUT_BUCKET.get());
     }
 
     @Override
