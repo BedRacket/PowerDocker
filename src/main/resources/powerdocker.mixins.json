@@ -6,9 +6,6 @@
   "mixins": [
     "MixinItem"
   ],
-  "client": [
-    "entity_events.MixinClientWorld"
-  ],
   "injectors": {
     "defaultRequire": 1
   }

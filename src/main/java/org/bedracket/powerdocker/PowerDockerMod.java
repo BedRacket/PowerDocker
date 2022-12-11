@@ -12,6 +12,7 @@ public class PowerDockerMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        LOGGER.info("Initializing PowerDocker Mod...");
         new ModItemGroups();
         ModEntities.registerAttributes();
         ModItems.ITEMS.register();
