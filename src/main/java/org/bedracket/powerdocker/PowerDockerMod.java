@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import org.bedracket.powerdocker.init.*;
 import org.slf4j.Logger;
 
+@SuppressWarnings("Instantiation")
 public class PowerDockerMod implements ModInitializer {
 
     public static Logger LOGGER = LogUtils.getLogger();
@@ -18,6 +19,7 @@ public class PowerDockerMod implements ModInitializer {
         new ModItemGroups();
         ModEntities.registerAttributes();
         ModEntitySpawns.addEntitySpawns();
+        ModFeatureSpawns.addFeatureSpawns();
         PowerDockerHooks.handleFood();
     }
 }

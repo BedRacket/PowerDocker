@@ -2,6 +2,7 @@ package org.bedracket.powerdocker.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
+import org.bedracket.powerdocker.init.ModBlocks;
 import org.bedracket.powerdocker.init.ModItems;
 
 public class ModLanguageProvider extends FabricLanguageProvider {
@@ -27,6 +28,8 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.COOKED_TROUT, "Cooked Trout");
         translationBuilder.add(ModItems.TROUT_SPAWN_EGG, "Trout Spawn Egg");
         translationBuilder.add(ModItems.TROUT_BUCKET, "Trout Bucket");
+        translationBuilder.add(ModBlocks.ROSE, "Rose");
+        translationBuilder.add(ModBlocks.POTTED_ROSE, "Potted Rose");
         translationBuilder.add("itemGroup.powerdocker.general", "PowerDocker|General");
     }
 }
