@@ -11,13 +11,17 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.bedracket.powerdocker.PowerDockerMod;
+import org.bedracket.powerdocker.client.renderer.StoneJavelinEntityRenderer;
 import org.bedracket.powerdocker.client.renderer.TroutRenderer;
+import org.bedracket.powerdocker.entity.StoneJavelinEntity;
 import org.bedracket.powerdocker.entity.TroutEntity;
 
 public class ModEntities {
 
     public static final EntityType<TroutEntity> TROUT_ENTITY =
             register("trout", SpawnGroup.WATER_AMBIENT, TroutEntity::new, 0.5F, 0.3F);
+    public static final EntityType<StoneJavelinEntity> STONE_JAVELIN_ENTITY =
+            register("stone_javelin", SpawnGroup.MISC, StoneJavelinEntity::new, 0.5F, 0.5F);
 
     public static <E extends Entity> EntityType<E> register(String name, SpawnGroup spawnGroup, EntityType.EntityFactory<E> factory, float width, float height) {
         return Registry.register(
@@ -34,5 +38,6 @@ public class ModEntities {
 
     public static void registerEntityRenderers() {
         EntityRendererRegistry.register(TROUT_ENTITY, TroutRenderer::new);
+        EntityRendererRegistry.register(STONE_JAVELIN_ENTITY, StoneJavelinEntityRenderer::new);
     }
 }

@@ -10,6 +10,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import org.bedracket.powerdocker.PowerDockerMod;
+import org.bedracket.powerdocker.item.StoneJavelinItem;
 
 public class ModItems {
 
@@ -71,6 +72,14 @@ public class ModItems {
     public static final Item ROSE =
             register("rose",
             new BlockItem(ModBlocks.ROSE, new Item.Settings()));
+    public static final Item CACTUS_BALL =
+            register("cactus_ball",
+                    new BlockItem(ModBlocks.CACTUS_BALL, new Item.Settings()));
+
+    /*Weapons*/
+    public static final Item STONE_JAVELIN =
+            register("stone_javelin",
+                    new StoneJavelinItem(3, -2.4F, new Item.Settings()));
 
     private static Item register(String name, Item item) {
         if (item instanceof BlockItem) {

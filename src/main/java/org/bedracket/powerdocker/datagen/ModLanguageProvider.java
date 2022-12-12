@@ -30,6 +30,8 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.TROUT_BUCKET, "Trout Bucket");
         translationBuilder.add(ModBlocks.ROSE, "Rose");
         translationBuilder.add(ModBlocks.POTTED_ROSE, "Potted Rose");
+        translationBuilder.add(ModBlocks.CACTUS_BALL, "Cactus Ball");
+        translationBuilder.add(ModBlocks.POTTED_CACTUS_BALL, "Potted Cactus Ball");
         translationBuilder.add("itemGroup.powerdocker.general", "PowerDocker|General");
     }
 }

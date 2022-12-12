@@ -30,6 +30,8 @@ public class ModLanguageProviderZh extends FabricLanguageProvider {
         translationBuilder.add(ModItems.TROUT_BUCKET, "鳟鱼桶");
         translationBuilder.add(ModBlocks.ROSE, "玫瑰");
         translationBuilder.add(ModBlocks.POTTED_ROSE, "玫瑰盆栽");
+        translationBuilder.add(ModBlocks.CACTUS_BALL, "仙人球");
+        translationBuilder.add(ModBlocks.POTTED_CACTUS_BALL, "仙人球盆栽");
         translationBuilder.add("itemGroup.powerdocker.general", "PowerDocker|通常");
     }
 }

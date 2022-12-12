@@ -8,5 +8,7 @@ public class ModBlockRenderLayers {
     public static void registerBlockRenderLayers() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ROSE, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_ROSE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CACTUS_BALL, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_CACTUS_BALL, RenderLayer.getCutout());
     }
 }

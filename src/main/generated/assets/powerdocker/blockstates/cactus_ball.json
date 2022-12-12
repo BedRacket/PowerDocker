@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "powerdocker:block/cactus_ball"
+    }
+  }
+}

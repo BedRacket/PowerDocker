@@ -13,5 +13,6 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.ROSE);
+        addDrop(ModBlocks.CACTUS_BALL);
     }
 }

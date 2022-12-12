@@ -16,10 +16,15 @@ public class ModPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> ROSE_PLACED =
             createRegistryKey("rose_placed");
+    public static final RegistryKey<PlacedFeature> CACTUS_BALL_PLACED =
+            createRegistryKey("cactus_ball_placed");
 
     public static void populate(FabricDynamicRegistryProvider.Entries entries) {
         entries.add(ROSE_PLACED, placeFeature(entries, ModConfiguredFeatures.ROSE,
                 CountPlacementModifier.of(3), RarityFilterPlacementModifier.of(2),
+                SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,  BiomePlacementModifier.of()));
+        entries.add(CACTUS_BALL_PLACED, placeFeature(entries, ModConfiguredFeatures.CACTUS_BALL,
+                RarityFilterPlacementModifier.of(16),
                 SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,  BiomePlacementModifier.of()));
     }
 

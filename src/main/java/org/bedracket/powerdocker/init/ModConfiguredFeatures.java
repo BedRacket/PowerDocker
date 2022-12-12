@@ -13,11 +13,16 @@ public class ModConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> ROSE =
             createRegistryKey("rose");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> CACTUS_BALL =
+            createRegistryKey("cactus_ball");
 
     public static void populate(FabricDynamicRegistryProvider.Entries entries) {
         entries.add(ROSE, configureFeature(Feature.FLOWER, new RandomPatchFeatureConfig(16, 3, 2,
                 PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
                         new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.ROSE))))));
+        entries.add(CACTUS_BALL, configureFeature(Feature.FLOWER, new RandomPatchFeatureConfig(16, 3, 2,
+                PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.CACTUS_BALL))))));
     }
 
     public static <FC extends FeatureConfig, F extends Feature<FC>> ConfiguredFeature<FC, ?> configureFeature(F feature, FC config) {

@@ -26,7 +26,9 @@ public class ModItemGroups {
                 entries.add(ModItems.COOKED_TROUT);
                 entries.add(ModItems.TROUT_BUCKET);
                 entries.add(ModItems.TROUT_SPAWN_EGG);
-                entries.add(ModBlocks.ROSE);
+                entries.add(ModItems.ROSE);
+                entries.add(ModItems.CACTUS_BALL);
+                entries.add(ModItems.STONE_JAVELIN);
             })
             .build();
 }
