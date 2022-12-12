@@ -34,6 +34,8 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.POTTED_CACTUS_BALL, "Potted Cactus Ball");
         translationBuilder.add(ModItems.STONE_JAVELIN, "Stone Javelin");
         translationBuilder.add(ModItems.COPPER_JAVELIN, "Copper Javelin");
+        translationBuilder.add(ModBlocks.COCA_CROP, "Coca Crop");
+        translationBuilder.add(ModItems.COCA, "Coca");
         translationBuilder.add("itemGroup.powerdocker.general", "PowerDocker|General");
     }
 }

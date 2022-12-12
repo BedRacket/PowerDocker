@@ -1,10 +1,12 @@
 {
   "block.powerdocker.cactus_ball": "Cactus Ball",
+  "block.powerdocker.coca_crop": "Coca Crop",
   "block.powerdocker.potted_cactus_ball": "Potted Cactus Ball",
   "block.powerdocker.potted_rose": "Potted Rose",
   "block.powerdocker.rose": "Rose",
   "item.powerdocker.bed_racket": "BedRacket",
   "item.powerdocker.bucket.trout": "Trout Bucket",
+  "item.powerdocker.coca": "Coca",
   "item.powerdocker.cooked_trout": "Cooked Trout",
   "item.powerdocker.copper_axe": "Copper Axe",
   "item.powerdocker.copper_boots": "Copper Boots",

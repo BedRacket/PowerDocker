@@ -23,6 +23,6 @@ public class ModDynamicRegistryProvider extends FabricDynamicRegistryProvider {
 
     @Override
     public String getName() {
-        return "PowerDocker";
+        return "Features";
     }
 }

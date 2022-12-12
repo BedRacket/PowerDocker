@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/tinted_cross",
+  "textures": {
+    "cross": "powerdocker:block/coca_crop_stage1"
+  }
+}

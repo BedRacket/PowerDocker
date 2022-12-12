@@ -34,6 +34,8 @@ public class ModLanguageProviderZh extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.POTTED_CACTUS_BALL, "仙人球盆栽");
         translationBuilder.add(ModItems.STONE_JAVELIN, "石矛");
         translationBuilder.add(ModItems.COPPER_JAVELIN, "铜矛");
+        translationBuilder.add(ModBlocks.COCA_CROP, "古柯灌木植物");
+        translationBuilder.add(ModItems.COCA, "Coca");
         translationBuilder.add("itemGroup.powerdocker.general", "PowerDocker|通常");
     }
 }

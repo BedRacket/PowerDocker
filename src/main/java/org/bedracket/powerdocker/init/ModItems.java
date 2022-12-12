@@ -85,6 +85,11 @@ public class ModItems {
             register("copper_javelin",
                     new CopperJavelinItem(3, -2.4F, new Item.Settings()));
 
+    /*Seeds*/
+    public static final Item COCA =
+            register("coca", new AliasedBlockItem(ModBlocks.COCA_CROP,
+                    new Item.Settings().food(FoodComponents.CARROT)));
+
     private static Item register(String name, Item item) {
         if (item instanceof BlockItem) {
             ((BlockItem)item).appendBlocks(Item.BLOCK_ITEMS, item);
