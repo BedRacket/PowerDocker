@@ -31,12 +31,27 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 ModItems.COPPER_LEGGINGS, ModItems.COPPER_BOOTS,
                 Items.COPPER_INGOT, exporter);
         offerSimpleCooking(exporter, ModItems.TROUT, ModItems.COOKED_TROUT);
+        offerJavelin(ModItems.STONE_JAVELIN, Items.COBBLESTONE, exporter);
+        offerJavelin(ModItems.COPPER_JAVELIN, Items.COPPER_INGOT, exporter);
     }
 
     private static void offerSimpleCooking(Consumer<RecipeJsonProvider> exporter, Item input, Item output) {
         CookingRecipeJsonBuilder recipeJsonBuilder = CookingRecipeJsonBuilder.create(Ingredient.ofItems(input), RecipeCategory.FOOD, output, 0.35F, 200, RecipeSerializer.SMELTING).criterion(hasItem(input), conditionsFromItem(input));
         String named = getItemPath(output);
         recipeJsonBuilder.offerTo(exporter, named);
+    }
+
+    private static void offerJavelin(Item result, Item material, Consumer<RecipeJsonProvider> exporter) {
+        ShapedRecipeJsonBuilder
+                .create(RecipeCategory.COMBAT, result)
+                .input('X', material)
+                .input('#', Items.STICK)
+                .pattern(" X ")
+                .pattern("X#X")
+                .pattern(" # ")
+                .criterion("has_" + material,
+                        conditionsFromItem(material))
+                .offerTo(exporter);
     }
 
     private static void offerNugget(Item ingotItem, Item nuggetItem, Consumer<RecipeJsonProvider> exporter) {
@@ -133,7 +148,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         conditionsFromItem(materialItem))
                 .offerTo(exporter);
         ShapedRecipeJsonBuilder
-                .create(RecipeCategory.TOOLS, swordItem)
+                .create(RecipeCategory.COMBAT, swordItem)
                 .input('#', Items.STICK)
                 .input('X', materialItem)
                 .pattern("X")

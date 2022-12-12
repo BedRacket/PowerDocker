@@ -12,9 +12,9 @@ import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
-import net.minecraft.item.ToolMaterials;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -26,14 +26,15 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
-import org.bedracket.powerdocker.entity.StoneJavelinEntity;
+import org.bedracket.powerdocker.entity.CopperJavelinEntity;
+import org.bedracket.powerdocker.init.ModToolMaterials;
 
-public class StoneJavelinItem extends SwordItem {
+public class CopperJavelinItem extends SwordItem {
 
     private final Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
 
-    public StoneJavelinItem(int attackDamage, float attackSpeed, Settings settings) {
-        super(ToolMaterials.STONE, attackDamage, attackSpeed, settings);
+    public CopperJavelinItem(int attackDamage, float attackSpeed, Item.Settings settings) {
+        super(ModToolMaterials.COPPER, attackDamage, attackSpeed, settings);
         ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
         builder.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(ATTACK_DAMAGE_MODIFIER_ID, "Tool modifier", 8.0, EntityAttributeModifier.Operation.ADDITION));
         builder.put(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(ATTACK_SPEED_MODIFIER_ID, "Tool modifier", -2.9000000953674316, EntityAttributeModifier.Operation.ADDITION));
@@ -67,7 +68,7 @@ public class StoneJavelinItem extends SwordItem {
                             p.sendToolBreakStatus(user.getActiveHand());
                         });
                         if (j == 0) {
-                            StoneJavelinEntity javelinEntity = new StoneJavelinEntity(world, playerEntity, stack);
+                            CopperJavelinEntity javelinEntity = new CopperJavelinEntity(world, playerEntity, stack);
                             javelinEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0F, 2.5F + (float)j * 0.5F, 1.0F);
                             if (playerEntity.getAbilities().creativeMode) {
                                 javelinEntity.pickupType = PersistentProjectileEntity.PickupPermission.CREATIVE_ONLY;

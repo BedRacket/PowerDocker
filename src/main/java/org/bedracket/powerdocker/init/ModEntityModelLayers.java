@@ -11,11 +11,14 @@ public class ModEntityModelLayers {
 
     public static final EntityModelLayer TROUT = register("trout");
     public static final EntityModelLayer STONE_JAVELIN = register("stone_javelin");
+    public static final EntityModelLayer COPPER_JAVELIN = register("copper_javelin");
 
     public static void registerEntityModelLayers() {
         EntityModelLayerRegistry.registerModelLayer(TROUT,
                 CodEntityModel::getTexturedModelData);
         EntityModelLayerRegistry.registerModelLayer(STONE_JAVELIN,
+                JavelinEntityModel::getTexturedModelData);
+        EntityModelLayerRegistry.registerModelLayer(COPPER_JAVELIN,
                 JavelinEntityModel::getTexturedModelData);
     }
 

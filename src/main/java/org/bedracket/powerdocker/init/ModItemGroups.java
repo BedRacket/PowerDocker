@@ -29,6 +29,8 @@ public class ModItemGroups {
                 entries.add(ModItems.ROSE);
                 entries.add(ModItems.CACTUS_BALL);
                 entries.add(ModItems.STONE_JAVELIN);
+                entries.add(ModItems.COPPER_JAVELIN);
+                entries.add(ModItems.LAND_KELP);
             })
             .build();
 }

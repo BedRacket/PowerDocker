@@ -17,6 +17,7 @@ public class PowerDockerMod implements ModInitializer {
         new ModItems();
         new ModBlocks();
         new ModItemGroups();
+        ModBlocks.registerFlammability();
         ModEntities.registerAttributes();
         ModEntitySpawns.addEntitySpawns();
         ModFeatureSpawns.addFeatureSpawns();
