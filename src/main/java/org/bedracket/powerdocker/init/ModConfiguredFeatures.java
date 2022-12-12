@@ -15,6 +15,8 @@ public class ModConfiguredFeatures {
             createRegistryKey("rose");
     public static final RegistryKey<ConfiguredFeature<?, ?>> CACTUS_BALL =
             createRegistryKey("cactus_ball");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> WILD_COCA =
+            createRegistryKey("wild_coca");
 
     public static void populate(FabricDynamicRegistryProvider.Entries entries) {
         entries.add(ROSE, configureFeature(Feature.FLOWER, new RandomPatchFeatureConfig(16, 3, 2,
@@ -23,6 +25,9 @@ public class ModConfiguredFeatures {
         entries.add(CACTUS_BALL, configureFeature(Feature.FLOWER, new RandomPatchFeatureConfig(16, 3, 2,
                 PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
                         new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.CACTUS_BALL))))));
+        entries.add(WILD_COCA, configureFeature(Feature.FLOWER, new RandomPatchFeatureConfig(10, 3, 2,
+                PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.WILD_COCA))))));
     }
 
     public static <FC extends FeatureConfig, F extends Feature<FC>> ConfiguredFeature<FC, ?> configureFeature(F feature, FC config) {

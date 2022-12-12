@@ -35,7 +35,21 @@ public class ModLanguageProviderZh extends FabricLanguageProvider {
         translationBuilder.add(ModItems.STONE_JAVELIN, "石矛");
         translationBuilder.add(ModItems.COPPER_JAVELIN, "铜矛");
         translationBuilder.add(ModBlocks.COCA_CROP, "古柯灌木植物");
-        translationBuilder.add(ModItems.COCA, "Coca");
+        translationBuilder.add(ModItems.COCA, "古柯");
+        translationBuilder.add(ModItems.DEPTH_METER, "深度计");
         translationBuilder.add("itemGroup.powerdocker.general", "PowerDocker|通常");
+        translationBuilder.add("info.powerdocker.burntime", "燃烧时间");
+        translationBuilder.add("info.powerdocker.minutes", "分钟");
+        translationBuilder.add("info.powerdocker.depth.sky_land", "的天域");
+        translationBuilder.add("info.powerdocker.depth.sky", "的高空");
+        translationBuilder.add("info.powerdocker.depth.cloud", "的云层");
+        translationBuilder.add("info.powerdocker.depth.base_cloud", "的低空");
+        translationBuilder.add("info.powerdocker.depth.sea_level", "的海平面");
+        translationBuilder.add("info.powerdocker.depth.surface", "的地表");
+        translationBuilder.add("info.powerdocker.depth.underground", "的地底");
+        translationBuilder.add("info.powerdocker.depth.deep_underground", "的深层地底");
+        translationBuilder.add("info.powerdocker.depth.bedrock", "的基岩层");
+        translationBuilder.add("info.powerdocker.depth.void", "的虚空");
+        translationBuilder.add("info.powerdocker.height", "当前位于高度");
     }
 }

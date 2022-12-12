@@ -31,6 +31,8 @@ public class ModItemGroups {
                 entries.add(ModItems.STONE_JAVELIN);
                 entries.add(ModItems.COPPER_JAVELIN);
                 entries.add(ModItems.COCA);
+                entries.add(ModItems.WILD_COCA);
+                entries.add(ModItems.DEPTH_METER);
             })
             .build();
 }

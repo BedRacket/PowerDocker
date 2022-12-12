@@ -24,6 +24,8 @@ public class ModModelProvider extends FabricModelProvider {
                 ModBlocks.POTTED_ROSE, BlockStateModelGenerator.TintType.TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.CACTUS_BALL,
                 ModBlocks.POTTED_CACTUS_BALL, BlockStateModelGenerator.TintType.TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.WILD_COCA,
+                ModBlocks.POTTED_WILD_COCA, BlockStateModelGenerator.TintType.TINTED);
         offerCrossCrop(blockStateModelGenerator, ModBlocks.COCA_CROP, Properties.AGE_7, 1, 2, 3, 4, 5, 6, 7, 8);
     }
 
@@ -44,6 +46,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.COPPER_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.STONE_JAVELIN, Models.HANDHELD);
         itemModelGenerator.register(ModItems.COPPER_JAVELIN, Models.HANDHELD);
+        itemModelGenerator.registerCompass(ModItems.DEPTH_METER);
     }
 
     public final void offerCrossCrop(BlockStateModelGenerator blockStateModelGenerator, Block crop, Property<Integer> ageProperty, int... ageTextureIndices) {

@@ -9,6 +9,7 @@ import net.minecraft.util.Identifier;
 import org.bedracket.powerdocker.PowerDockerMod;
 import org.bedracket.powerdocker.block.CocaCropBlock;
 import org.bedracket.powerdocker.block.CactusBallBlock;
+import org.bedracket.powerdocker.block.WildCocaBlock;
 
 public class ModBlocks {
 
@@ -26,6 +27,11 @@ public class ModBlocks {
                     AbstractBlock.Settings.copy(Blocks.POTTED_CACTUS)));
     public static final Block COCA_CROP = register("coca_crop",
             new CocaCropBlock());
+    public static final Block WILD_COCA = register("wild_coca",
+            new WildCocaBlock());
+    public static final Block POTTED_WILD_COCA = register("potted_wild_coca",
+            new FlowerPotBlock(ModBlocks.WILD_COCA,
+                    AbstractBlock.Settings.copy(Blocks.DANDELION)));
 
     private static Block register(String name, Block block) {
         return Registry.register(Registries.BLOCK, new Identifier(PowerDockerMod.MOD_ID, name), block);

@@ -3,10 +3,8 @@ package org.bedracket.powerdocker.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.CropBlock;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.predicate.StatePredicate;
 import org.bedracket.powerdocker.init.ModBlocks;
@@ -22,6 +20,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.ROSE);
         addDrop(ModBlocks.CACTUS_BALL);
+        addDrop(ModBlocks.WILD_COCA);
         addPottedPlantDrops(ModBlocks.POTTED_ROSE);
         addPottedPlantDrops(ModBlocks.POTTED_CACTUS_BALL);
         offerCropDrop(ModBlocks.COCA_CROP, ModItems.COCA, ModItems.COCA, 7);

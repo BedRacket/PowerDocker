@@ -12,14 +12,15 @@ public class CocaCropBlock extends CropBlock {
 
     private static final VoxelShape[] AGE_TO_SHAPE =
             new VoxelShape[]{
-                    Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 8.0, 13.0),
-                    Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 8.0, 13.0),
                     Block.createCuboidShape(1.0, 0.0, 1.0, 15.0, 16.0, 15.0),
                     Block.createCuboidShape(1.0, 0.0, 1.0, 15.0, 16.0, 15.0),
                     Block.createCuboidShape(1.0, 0.0, 1.0, 15.0, 16.0, 15.0),
                     Block.createCuboidShape(1.0, 0.0, 1.0, 15.0, 16.0, 15.0),
                     Block.createCuboidShape(1.0, 0.0, 1.0, 15.0, 16.0, 15.0),
-                    Block.createCuboidShape(1.0, 0.0, 1.0, 15.0, 16.0, 15.0)};
+                    Block.createCuboidShape(1.0, 0.0, 1.0, 15.0, 16.0, 15.0),
+                    Block.createCuboidShape(1.0, 0.0, 1.0, 15.0, 16.0, 15.0),
+                    Block.createCuboidShape(1.0, 0.0, 1.0, 15.0, 16.0, 15.0)
+    };
 
     public CocaCropBlock() {
         super(Settings.of(Material.PLANT).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP));

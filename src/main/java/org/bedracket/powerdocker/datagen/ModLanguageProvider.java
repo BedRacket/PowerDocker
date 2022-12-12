@@ -36,6 +36,18 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.COPPER_JAVELIN, "Copper Javelin");
         translationBuilder.add(ModBlocks.COCA_CROP, "Coca Crop");
         translationBuilder.add(ModItems.COCA, "Coca");
+        translationBuilder.add(ModItems.DEPTH_METER, "Depth Meter");
         translationBuilder.add("itemGroup.powerdocker.general", "PowerDocker|General");
+        translationBuilder.add("info.powerdocker.depth.sky_land", "'s sky land");
+        translationBuilder.add("info.powerdocker.depth.sky", "'s sky");
+        translationBuilder.add("info.powerdocker.depth.cloud", "'s cloud");
+        translationBuilder.add("info.powerdocker.depth.base_cloud", "'s base cloud");
+        translationBuilder.add("info.powerdocker.depth.sea_level", "'s sea level");
+        translationBuilder.add("info.powerdocker.depth.surface", "'s surface");
+        translationBuilder.add("info.powerdocker.depth.underground", "'s sea level");
+        translationBuilder.add("info.powerdocker.depth.deep_underground", "'s deep underground");
+        translationBuilder.add("info.powerdocker.depth.bedrock", "'s bedrock");
+        translationBuilder.add("info.powerdocker.depth.void", "'s void");
+        translationBuilder.add("info.powerdocker.height", "At now is in the height ");
     }
 }

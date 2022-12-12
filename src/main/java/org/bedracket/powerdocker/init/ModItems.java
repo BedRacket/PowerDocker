@@ -11,6 +11,7 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import org.bedracket.powerdocker.PowerDockerMod;
 import org.bedracket.powerdocker.item.CopperJavelinItem;
+import org.bedracket.powerdocker.item.DepthMeterItem;
 import org.bedracket.powerdocker.item.StoneJavelinItem;
 
 public class ModItems {
@@ -76,6 +77,9 @@ public class ModItems {
     public static final Item CACTUS_BALL =
             register("cactus_ball",
                     new BlockItem(ModBlocks.CACTUS_BALL, new Item.Settings()));
+    public static final Item WILD_COCA =
+            register("wild_coca",
+                    new BlockItem(ModBlocks.WILD_COCA, new Item.Settings()));
 
     /*Weapons*/
     public static final Item STONE_JAVELIN =
@@ -89,6 +93,10 @@ public class ModItems {
     public static final Item COCA =
             register("coca", new AliasedBlockItem(ModBlocks.COCA_CROP,
                     new Item.Settings().food(FoodComponents.CARROT)));
+
+    /*Measure Tools*/
+    public static final Item DEPTH_METER =
+            register("depth_meter", new DepthMeterItem());
 
     private static Item register(String name, Item item) {
         if (item instanceof BlockItem) {
