@@ -11,12 +11,14 @@
   "item.powerdocker.copper_chestplate": "铜制胸甲",
   "item.powerdocker.copper_helmet": "铜制头盔",
   "item.powerdocker.copper_hoe": "铜锄",
+  "item.powerdocker.copper_javelin": "铜矛",
   "item.powerdocker.copper_leggings": "铜制护腿",
   "item.powerdocker.copper_nugget": "铜粒",
   "item.powerdocker.copper_pickaxe": "铜镐",
   "item.powerdocker.copper_shovel": "铜锹",
   "item.powerdocker.copper_sword": "铜剑",
   "item.powerdocker.spawn_egg.trout": "鳟鱼刷怪蛋",
+  "item.powerdocker.stone_javelin": "石矛",
   "item.powerdocker.trout": "鳟鱼",
   "itemGroup.powerdocker.general": "PowerDocker|通常"
 }

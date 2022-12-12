@@ -11,12 +11,14 @@
   "item.powerdocker.copper_chestplate": "Copper Chestplate",
   "item.powerdocker.copper_helmet": "Copper Helmet",
   "item.powerdocker.copper_hoe": "Copper Hoe",
+  "item.powerdocker.copper_javelin": "Copper Javelin",
   "item.powerdocker.copper_leggings": "Copper Leggings",
   "item.powerdocker.copper_nugget": "Copper Nugget",
   "item.powerdocker.copper_pickaxe": "Copper Pickaxe",
   "item.powerdocker.copper_shovel": "Copper Shovel",
   "item.powerdocker.copper_sword": "Copper Sword",
   "item.powerdocker.spawn_egg.trout": "Trout Spawn Egg",
+  "item.powerdocker.stone_javelin": "Stone Javelin",
   "item.powerdocker.trout": "Trout",
   "itemGroup.powerdocker.general": "PowerDocker|General"
 }

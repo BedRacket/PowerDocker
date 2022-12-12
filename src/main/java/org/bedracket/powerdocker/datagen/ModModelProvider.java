@@ -16,7 +16,6 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.ROSE, ModBlocks.POTTED_ROSE, BlockStateModelGenerator.TintType.TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.CACTUS_BALL, ModBlocks.POTTED_CACTUS_BALL, BlockStateModelGenerator.TintType.TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.LAND_KELP, ModBlocks.POTTED_LAND_KELP, BlockStateModelGenerator.TintType.TINTED);
     }
 
     @Override
