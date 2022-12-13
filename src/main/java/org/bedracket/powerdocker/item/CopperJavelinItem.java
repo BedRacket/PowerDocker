@@ -26,7 +26,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
-import org.bedracket.powerdocker.entity.CopperJavelinEntity;
+import org.bedracket.powerdocker.entity.projectiles.CopperJavelinEntity;
 import org.bedracket.powerdocker.init.ModToolMaterials;
 
 public class CopperJavelinItem extends SwordItem {

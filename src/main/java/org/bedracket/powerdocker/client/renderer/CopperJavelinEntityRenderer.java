@@ -14,7 +14,7 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.RotationAxis;
 import org.bedracket.powerdocker.PowerDockerMod;
 import org.bedracket.powerdocker.client.model.JavelinEntityModel;
-import org.bedracket.powerdocker.entity.CopperJavelinEntity;
+import org.bedracket.powerdocker.entity.projectiles.CopperJavelinEntity;
 import org.bedracket.powerdocker.init.ModEntityModelLayers;
 
 @Environment(EnvType.CLIENT)

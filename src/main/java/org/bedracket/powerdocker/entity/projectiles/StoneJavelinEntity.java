@@ -1,4 +1,4 @@
-package org.bedracket.powerdocker.entity;
+package org.bedracket.powerdocker.entity.projectiles;
 
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;

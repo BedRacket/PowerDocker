@@ -69,6 +69,9 @@ public class ModItems {
             registerMobBuckteItem("trout", ModEntities.TROUT_ENTITY);
     public static final Item TROUT_SPAWN_EGG =
             registerSpawnEgg("trout", ModEntities.TROUT_ENTITY, 0x5a867c, 0x6b9f93);
+    public static final Item OCEAN_SHARK_SPAWN_EGG =
+            registerSpawnEgg("ocean_shark", ModEntities.OCEAN_SHARK_ENTITY, 0x302521, 0xe4edf2);
+
 
     /*BlockItem*/
     public static final Item ROSE =

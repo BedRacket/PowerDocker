@@ -26,7 +26,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
-import org.bedracket.powerdocker.entity.StoneJavelinEntity;
+import org.bedracket.powerdocker.entity.projectiles.StoneJavelinEntity;
 
 public class StoneJavelinItem extends SwordItem {
 

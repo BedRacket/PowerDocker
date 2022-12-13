@@ -14,9 +14,9 @@ import org.bedracket.powerdocker.entity.TroutEntity;
 import org.bedracket.powerdocker.init.ModEntityModelLayers;
 
 @Environment(EnvType.CLIENT)
-public class TroutRenderer<T extends TroutEntity> extends MobEntityRenderer<TroutEntity, CodEntityModel<TroutEntity>> {
+public class TroutEntityRenderer<T extends TroutEntity> extends MobEntityRenderer<TroutEntity, CodEntityModel<TroutEntity>> {
 
-    public TroutRenderer(EntityRendererFactory.Context arg) {
+    public TroutEntityRenderer(EntityRendererFactory.Context arg) {
         super(arg, new CodEntityModel<>(arg.getPart(ModEntityModelLayers.TROUT)), 0.3F);
     }
 
